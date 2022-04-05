@@ -1,0 +1,28 @@
+$font-stack: 'Fraunces', serif;
+$primary-color: black;
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    // font-family: $font-stack;
+
+    .logo{
+        font-size: 32px;
+    }  
+
+    .nav-links{
+        margin-right: 15% ;
+        ul{
+            font-size: 24px;
+            display: flex;
+            list-style-type: none;
+           
+            li{
+               margin-left:25%;
+               cursor: pointer;
+            }
+        }
+    }
+    
+}
