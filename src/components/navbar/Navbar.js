@@ -6,7 +6,7 @@ const Navbar = ()=> {
   return (
     <div className='nav-bar'>
         <div className='logo'>
-            Xyz
+            Xyz.
         </div>
 
         <div className='nav-links'>
