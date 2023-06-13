@@ -21,8 +21,12 @@ $primary-color: black;
             li{
                margin-left:25%;
                cursor: pointer;
+               text-decoration: none;
             }
         }
     }
-    
+    .nav-link{
+        color: black;
+        text-decoration: none;
+    }
 }
