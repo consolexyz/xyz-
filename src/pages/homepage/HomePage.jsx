@@ -13,7 +13,8 @@ const  HomePage= () =>{
   useLayoutEffect(() =>{
     let ctx = gsap.context(() => {
 
-      gsap.from(".heading", { duration:1, opacity: 0, x: 200, stagger:0.25})
+      gsap.from(".heading", { duration:2, opacity: 0, x: 300,})
+      gsap.from(".home-images",{ duration:3,opacity:0, scale:0})
     }, home);
 
     return() => ctx.revert();
