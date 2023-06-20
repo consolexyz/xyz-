@@ -1,10 +1,12 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import './homepage.scss';
 import { gsap } from 'gsap';
-import man from "../../assets/man.jpg" 
-import cow from "../../assets/cow.jpg"
+import { ExpoScaleEase ,} from "gsap/EasePack";
 
 const  HomePage= () =>{
+
+
+  gsap.registerPlugin(ExpoScaleEase);
 
   const home = useRef();
   // const box = useRef();
@@ -13,8 +15,8 @@ const  HomePage= () =>{
   useLayoutEffect(() =>{
     let ctx = gsap.context(() => {
 
-      gsap.from(".heading", { duration:2, opacity: 0, x: 150 })
-      gsap.from(".home-images",{ duration:3,opacity:0, scale:0})
+    gsap.fromTo(".heading", { autoAlpha:0, x: 150 , duration: 2, immediateRender: true  },{ autoAlpha: 1, x:0 })
+    gsap.fromTo(".home-images",{ delay:3,stagger: 0.75,scale:0},{ autoAlpha: 1 , scale:1, ease: "expoScale(0.1, 2 , Power2.inOut)" })
     }, home);
 
     return() => ctx.revert();
@@ -29,8 +31,8 @@ const  HomePage= () =>{
     <h1 className='heading' ref={heading}>XYZ</h1>
     <h1 className='heading photography-text' ref={heading}>PHOTOGRAPHY</h1>
     {/* <div className='home-images'> */}
-      <img src={man} className='man-image home-images' alt= " a man standing" />
-      <img src={cow} className='cow-image home-images' alt = " a cow standing" />
+      <img src= "https://res.cloudinary.com/mosesjayz/image/upload/v1687286491/xyz-%20photography/man_c4rfhr.jpg" className='man-image home-images' alt= " a man standing" />
+      <img src="https://res.cloudinary.com/mosesjayz/image/upload/v1687286665/xyz-%20photography/cow_sbdann.jpg" className='cow-image home-images' alt = " a cow standing" />
     {/* </div> */}
     {/* <div className='box' ref={box}></div> */}
     </div>

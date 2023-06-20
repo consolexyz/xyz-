@@ -1,12 +1,12 @@
 import React from "react";
 
 
-function Works() {
+function Gallery() {
     return (  
         <div>
-            works
+             Gallery 
         </div>
     );
 }
 
-export default Works;
+export default Gallery;
