@@ -15,8 +15,8 @@ const  HomePage= () =>{
   useLayoutEffect(() =>{
     let ctx = gsap.context(() => {
 
-    gsap.fromTo(".heading", { autoAlpha:0, x: 150 , duration: 2, immediateRender: true  },{ autoAlpha: 1, x:0 })
-    gsap.fromTo(".home-images",{ delay:3,stagger: 0.75,scale:0},{ autoAlpha: 1 , scale:1, ease: "expoScale(0.1, 2 , Power2.inOut)" })
+    gsap.fromTo(".heading", { autoAlpha:0, x: 150 , duration: 2},{ autoAlpha: 1, x:0 })
+    gsap.fromTo(".home-images",{ delay:3,stagger: 1,scale:0},{ duration: 2.5, autoAlpha: 1 , scale:1, ease: "expoScale( 0.01, 1 ,Power2.inOut)"});
     }, home);
 
     return() => ctx.revert();
