@@ -31,8 +31,8 @@ const  HomePage= () =>{
     <h1 className='heading' ref={heading}>XYZ</h1>
     <h1 className='heading photography-text' ref={heading}>PHOTOGRAPHY</h1>
     {/* <div className='home-images'> */}
-      <img src= "https://res.cloudinary.com/mosesjayz/image/upload/v1687286491/xyz-%20photography/man_c4rfhr.jpg" className='man-image home-images' alt= " a man standing" />
-      <img src="https://res.cloudinary.com/mosesjayz/image/upload/v1687286665/xyz-%20photography/cow_sbdann.jpg" className='cow-image home-images' alt = " a cow standing" />
+      <img src= "https://res.cloudinary.com/mosesjayz/image/upload/v1687295658/xyz-%20photography/man_c4rfhr_1_sjehzs.jpg" className='man-image home-images' alt= " a man standing" />
+      <img src="https://res.cloudinary.com/mosesjayz/image/upload/v1687295668/xyz-%20photography/cow_sbdann_1_kdaips.jpg" className='cow-image home-images' alt = " a cow standing" />
     {/* </div> */}
     {/* <div className='box' ref={box}></div> */}
     </div>
