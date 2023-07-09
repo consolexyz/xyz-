@@ -24,12 +24,14 @@
         top: 92%;
         left: 10%;
         z-index: 1;
+        will-change: transform ;
     }
     .cow-image{
         width: 20%;
         height:auto;
         position: absolute;
         left: 80%;
+        will-change: transform;
     }
     
 }
