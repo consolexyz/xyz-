@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './nav-bar.scss';
 
 
@@ -7,19 +6,19 @@ const Navbar = ()=> {
   return (
     <div className='nav-bar'>
         <div className='logo'>
-           <Link to= "./" className='nav-link' >Xyz.</Link>
+           <a herf= "./" className='nav-link' >Xyz. </a>
         </div>
 
         <div className='nav-links'>
             <ul>
                 <li>
-                 <Link to="/about" className='nav-link'>About</Link>
+                 <a herf="#" className='nav-link'>About</a>
                   </li>
                 <li>
-                  <Link to="/gallery" className='nav-link' > Gallery</Link>
+                  <a herf="#" className='nav-link' > Gallery</a>
                   </li>
                 <li>
-                   <Link to= "/contact" className='nav-link'>Contact</Link>
+                   <a  herf= "#" className='nav-link'>Contact</a>
                    </li>
             </ul>
         </div>
